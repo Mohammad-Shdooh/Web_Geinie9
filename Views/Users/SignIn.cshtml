@@ -1,0 +1,93 @@
+﻿@model Web_Geinie9.Models.User
+@{
+    ViewData["Title"] = "SignIn";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="~/css/site.css">
+<script src="~/js/site.js"></script>
+
+
+
+<body>
+    <div class="Main-Section">
+        <h1>WELCOM TO OUR SYSTEM</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content mb-5">
+                        <h2>
+                            <span>500GB </span> cold Storage <span>500GB </span> vault Storage 2 & Unlimited External
+                            Drives Yearly
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box">
+                                <img src="~/images//aws_check_icon.png" alt="">
+                                <h4>AWS DVANCED Technology partner</h4>
+                                <p>Zoolz levarge the robust and reliable Amazon Cloud trusted by million</p>
+                            </div>
+                            <div class="box">
+                                <img src="~/images/secure_icon.png" alt="">
+                                <h4>AWS DVANCED Technology partner</h4>
+                                <p>Zoolz levarge the robust and reliable Amazon Cloud trusted by million</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box">
+                                <img src="~/images/backup_tech_icon.png" alt="">
+                                <h4>AWS DVANCED Technology partner</h4>
+                                <p>Zoolz levarge the robust and reliable Amazon Cloud trusted by million</p>
+                            </div>
+                            <div class="box">
+                                <img src="~/images//everything_icon.png" alt="">
+                                <h4>AWS DVANCED Technology partner</h4>
+                                <p>Zoolz levarge the robust and reliable Amazon Cloud trusted by million</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content mb-5">
+                        <h2 class="aquaText">SIGNUP NOW AND GET STARTED</h2>
+                        <h3>Please enter your account information</h3>
+                    </div>
+                    <div class="form-section">
+                        <form asp-action="SignIn">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="FullNa">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="text" asp-for="Email" placeholder="Email Address">
+                                <div> <span asp-validation-for="Email" class="text-danger"></span></div>
+                            </div>
+                            <div class="FullNa">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" asp-for="Pass" placeholder="Password">
+                                <div> <span asp-validation-for="Pass" class="text-danger"></span> </div>
+                            </div>
+                           
+                            <button type="submit" >Active Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+
+

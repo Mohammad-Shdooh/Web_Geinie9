@@ -1,0 +1,130 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color :aquamarine ;
+}
+/*.inputContainer {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    right: auto;
+}
+
+
+
+*/
+
+
+body {
+    background-color: darkgrey;
+}
+
+.Main-Section {
+    margin: 6%;
+}
+
+    .Main-Section h1 {
+        text-align: center;
+        text-decoration: underline;
+        margin: 4%;
+    }
+
+span {
+    color: rgb(5, 131, 97);
+}
+
+h2 {
+    text-align: -webkit-center;
+}
+
+h3 {
+    text-align: -webkit-center;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.aquaText {
+    color: rgb(5, 131, 97);
+}
+
+.box {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin-bottom: 9%;
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    width: 30%;
+    align-self: center;
+    margin: 8%;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 400px;
+    height: 45px;
+    color: darkgrey;
+    background-color: rgb(187, 187, 188);
+    margin: 2%;
+    padding: 0% 7%;
+    border: none;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    background-color: rgb(78, 2, 110);
+    color: #fff;
+    font-size: 24px;
+    margin: 2%;
+    border-radius: 7px;
+    border: none;
+}
+
+.FullNa {
+    position: relative;
+}
+
+i {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    color: rgb(62, 61, 61);
+}
